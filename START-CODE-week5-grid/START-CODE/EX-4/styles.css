@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 20px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;   
+}
+.sidebar {
+    background-color: #5cbee2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -15rem;
+}
+.nav-link li {
+    padding:8px 10px;
+    border-radius: 4px;
+    margin: 20px;
+}
+.nav-links li:hover {
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.main {
+    font-size: 1.2rem;
+    background-color: #5e91d4;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.card {
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.a {
+    grid-column: span 3;
+} 
+.b {
+    grid-column: span 2;
+}
+.r-sidebar {
+    font-size: 1.2rem;
+    background-color: #56b8d8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.logo, .setting, .dashboard {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}  
+.quiz, .flashcard, .reminder {
+    height: 100px;
+}
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.profile-role {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #fff;
+}   
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
